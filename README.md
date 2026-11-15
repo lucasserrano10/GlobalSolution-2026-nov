@@ -105,13 +105,13 @@ Validação: `npx tsc --noEmit` e `npx eslint src`.
 
 ## Prints das telas
 
-| Início | Início durante a chuva | Detalhe da rua |
-|---|---|---|
-| ![Início](docs/prints/01-inicio.png) | ![Durante a chuva](docs/prints/02-inicio-durante.png) | ![Detalhe da rua](docs/prints/03-detalhe-rua.png) |
+| Início | Quadras |
+|---|---|
+| ![Início](docs/prints/01-inicio.png) | ![Quadras](docs/prints/02-quadras.png) |
 
-| Quadras | Reportar | Meus relatos |
-|---|---|---|
-| ![Quadras](docs/prints/04-quadras.png) | ![Reportar](docs/prints/05-reportar.png) | ![Meus relatos](docs/prints/06-meus-relatos.png) |
+| Reportar | Meus relatos |
+|---|---|
+| ![Reportar](docs/prints/03-reportar.png) | ![Meus relatos](docs/prints/04-meus-relatos.png) |
 
 ## Vídeo de demonstração (até 3 min)
 
@@ -127,7 +127,7 @@ Roteiro sugerido: [`docs/ROTEIRO_VIDEO.md`](docs/ROTEIRO_VIDEO.md).
 
 - [ ] Preencher **cidade e bairro** e o **link do repositório** na Ficha.
 - [ ] Preencher os **integrantes**.
-- [ ] Salvar os 6 prints em [`docs/prints/`](docs/prints/LEIAME.md) com os nomes indicados.
+- [ ] Trocar os prints por capturas do celular (Expo Go) e acrescentar o **detalhe da rua** e o **relato enviado** em [`docs/prints/`](docs/prints/LEIAME.md).
 - [ ] Gravar o vídeo e colar o link acima.
 - [ ] Apagar esta seção de pendências.
 
