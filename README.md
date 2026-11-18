@@ -131,4 +131,4 @@ Validação: `npx tsc --noEmit` e `npx eslint src`.
 
 ## Dados e IA
 
-Todos os dados são **simulados**, baseados no resumo técnico da proposta (quadra de 420 m², fases 72 h / 2 h / durante). Prompts usados: veja [`prompts.md`](prompts.md).
+Todos os dados são **simulados**, baseados no resumo técnico da proposta (quadra de 420 m², fases 72 h / 2 h / durante).
