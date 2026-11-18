@@ -121,7 +121,6 @@ Validação: `npx tsc --noEmit` e `npx eslint src`.
 
 **Link:** https://www.youtube.com/watch?v=q2uuUyRqxJk
 
-Roteiro sugerido: [`docs/ROTEIRO_VIDEO.md`](docs/ROTEIRO_VIDEO.md).
 
 ## Integrantes
 
