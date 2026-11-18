@@ -126,12 +126,6 @@ Roteiro sugerido: [`docs/ROTEIRO_VIDEO.md`](docs/ROTEIRO_VIDEO.md).
 - Ana Clara, RM 559021
 - Yasmin Gonçalves, RM 559147
 
-## Pendências antes de entregar
-
-- [ ] Trocar os prints por capturas do celular (Expo Go) e acrescentar o **detalhe da rua** e o **relato enviado** em [`docs/prints/`](docs/prints/LEIAME.md).
-- [ ] Gravar o vídeo e colar o link acima.
-- [ ] Apagar esta seção de pendências.
-
 ## Dados e IA
 
 Todos os dados são **simulados**, baseados no resumo técnico da proposta (quadra de 420 m², fases 72 h / 2 h / durante). Prompts usados: veja [`prompts.md`](prompts.md).
