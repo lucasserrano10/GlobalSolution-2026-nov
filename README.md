@@ -7,7 +7,7 @@ App em **React Native + TypeScript + Expo Router** que é a porta de entrada do 
 | Campo | Resposta |
 |---|---|
 | **Nome da CitizenTech** | Quadra Viva |
-| **Cidade e bairro** | _(preencher: bairro do piloto com alagamento crônico; os dados do app são simulados)_ |
+| **Cidade e bairro** | São Paulo (SP), Vila Madalena: bairro proposto para o piloto. Os dados do app são simulados. |
 | **Cidadão beneficiado** | Morador de rua/bairro com alagamento recorrente e a Defesa Civil local |
 | **Problema, em uma frase** | Moradores só descobrem o alagamento depois que a rua já alagou, porque bocas de lobo entupidas e a resposta tardia não são avisadas com antecedência. |
 | **Como funciona** | Sensores nas bocas de lobo + previsão de curto prazo + atuadores (comportas, quadras, robôs) agem antes da chuva. A quadra pública vira reservatório no pico da chuva. O app mostra o risco por rua em cada fase do evento (72 h antes, 2 h antes, durante) e recebe relatos dos moradores. |
@@ -121,12 +121,13 @@ Roteiro sugerido: [`docs/ROTEIRO_VIDEO.md`](docs/ROTEIRO_VIDEO.md).
 
 ## Integrantes
 
-- _(nome completo e RM de cada integrante, até 5)_
+- Lucas Serrano, RM 555170
+- David Murillo, RM 559078
+- Ana Clara, RM 559021
+- Yasmin Gonçalves, RM 559147
 
 ## Pendências antes de entregar
 
-- [ ] Preencher **cidade e bairro** e o **link do repositório** na Ficha.
-- [ ] Preencher os **integrantes**.
 - [ ] Trocar os prints por capturas do celular (Expo Go) e acrescentar o **detalhe da rua** e o **relato enviado** em [`docs/prints/`](docs/prints/LEIAME.md).
 - [ ] Gravar o vídeo e colar o link acima.
 - [ ] Apagar esta seção de pendências.
