@@ -12,7 +12,7 @@ App em **React Native + TypeScript + Expo Router** que é a porta de entrada do 
 | **Problema, em uma frase** | Moradores só descobrem o alagamento depois que a rua já alagou, porque bocas de lobo entupidas e a resposta tardia não são avisadas com antecedência. |
 | **Como funciona** | Sensores nas bocas de lobo + previsão de curto prazo + atuadores (comportas, quadras, robôs) agem antes da chuva. A quadra pública vira reservatório no pico da chuva. O app mostra o risco por rua em cada fase do evento (72 h antes, 2 h antes, durante) e recebe relatos dos moradores. |
 | **O que cada parte faz** | **Mobile (esta pasta):** consulta de risco/quadras e registro de relatos. **IoT/ESP32:** sensor de nível na boca de lobo. **IA/ML:** previsão de alagamento. **Backend (SOA/C#):** API de snapshots e relatos. **Infra (OS):** hospedagem. **Cyber:** proteção de dados. **QA:** requisitos e testes. |
-| **Link do repositório** | _(preencher)_ |
+| **Link do repositório** | https://github.com/lucasserrano10/GlobalSolution-2026-nov |
 | **Indicador de impacto** | % de alagamentos previstos e antecedência do alerta; bocas de lobo desobstruídas antes da chuva; redução da lâmina d'água nas ruas monitoradas. |
 | **ODS conectados** | **11** Cidades e comunidades sustentáveis (reduz risco e danos de alagamentos); **13** Ação contra a mudança global do clima (adaptação a chuvas extremas); **9** Indústria, inovação e infraestrutura (drenagem inteligente e resiliente). |
 
