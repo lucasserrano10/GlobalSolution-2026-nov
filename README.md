@@ -113,6 +113,10 @@ Validação: `npx tsc --noEmit` e `npx eslint src`.
 |---|---|
 | ![Reportar](docs/prints/03-reportar.png) | ![Meus relatos](docs/prints/04-meus-relatos.png) |
 
+| Detalhe da rua |
+|---|
+| ![Detalhe da rua](docs/prints/05-detalhe-rua.png) |
+
 ## Vídeo de demonstração (até 3 min)
 
 **Link:** https://www.youtube.com/watch?v=q2uuUyRqxJk
