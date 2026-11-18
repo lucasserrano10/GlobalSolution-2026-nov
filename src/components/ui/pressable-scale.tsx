@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from 'react';
-import { Animated, Pressable, type PressableProps, type StyleProp, type ViewStyle } from 'react-native';
+import { Animated, Pressable, StyleSheet, type PressableProps, type StyleProp, type ViewStyle } from 'react-native';
 
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
 
@@ -10,10 +10,20 @@ interface Props extends Omit<PressableProps, 'style' | 'children'> {
   scaleTo?: number;
 }
 
+/** Propriedades de posicionamento que precisam ficar no Pressable (o pai), não na View animada. */
+function splitLayout(style: StyleProp<ViewStyle>) {
+  const { flex, flexGrow, flexShrink, flexBasis, alignSelf, width, minWidth, maxWidth, margin, marginHorizontal, marginVertical, marginTop, marginBottom, marginLeft, marginRight, ...inner } =
+    StyleSheet.flatten(style) ?? {};
+  const outer: ViewStyle = { flex, flexGrow, flexShrink, flexBasis, alignSelf, width, minWidth, maxWidth, margin, marginHorizontal, marginVertical, marginTop, marginBottom, marginLeft, marginRight };
+  (Object.keys(outer) as (keyof ViewStyle)[]).forEach((k) => outer[k] === undefined && delete outer[k]);
+  return { outer, inner };
+}
+
 /** Pressable com feedback sutil de escala, desativado se o usuário pediu menos movimento. */
 export function PressableScale({ style, children, scaleTo = 0.98, onPressIn, onPressOut, ...rest }: Props) {
   const [scale] = useState(() => new Animated.Value(1));
   const reduced = useReducedMotion();
+  const { outer, inner } = splitLayout(style);
 
   const animate = (to: number) => {
     if (reduced) return;
@@ -22,6 +32,7 @@ export function PressableScale({ style, children, scaleTo = 0.98, onPressIn, onP
 
   return (
     <Pressable
+      style={outer}
       onPressIn={(e) => {
         animate(scaleTo);
         onPressIn?.(e);
@@ -31,7 +42,9 @@ export function PressableScale({ style, children, scaleTo = 0.98, onPressIn, onP
         onPressOut?.(e);
       }}
       {...rest}>
-      <Animated.View style={[{ transform: [{ scale }] }, style]}>{children}</Animated.View>
+      <Animated.View style={[{ transform: [{ scale }] }, inner, outer.flex !== undefined && styles.fill]}>{children}</Animated.View>
     </Pressable>
   );
 }
+
+const styles = StyleSheet.create({ fill: { flex: 1 } });
