@@ -115,7 +115,7 @@ Validação: `npx tsc --noEmit` e `npx eslint src`.
 
 ## Vídeo de demonstração (até 3 min)
 
-**Link:** _(colar aqui o link do YouTube, não listado)_
+**Link:** https://www.youtube.com/watch?v=q2uuUyRqxJk
 
 Roteiro sugerido: [`docs/ROTEIRO_VIDEO.md`](docs/ROTEIRO_VIDEO.md).
 
